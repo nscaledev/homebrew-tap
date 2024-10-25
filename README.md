@@ -1,1 +1,1 @@
-# homebrew-nscale
+# homebrew-tap

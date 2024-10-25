@@ -18,7 +18,7 @@ class Nscale < Formula
       end
     end
     on_arm do
-      url "https://github.com/nscaledev/nscale-cli/releases/download/v0.0.1-beta3/nscale-cli_Darwin_arm64.tar.gz"
+      url "https://github.com/nscaledev/homebrew-nscale/releases/download/v0.0.1-beta3/nscale-cli_Darwin_arm64.tar.gz"
       sha256 "4e0198fceae8d23357125ef24193eb1f11a944c5e7e7ffb8e791b4fda08718f4"
 
       def install

@@ -5,21 +5,21 @@
 class NscaleAlpha < Formula
   desc "The Nscale CLI tool (ALPHA)"
   homepage "https://console.nscale.com"
-  version "3.0.0-alpha.1"
+  version "3.0.0-alpha.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.0.0-alpha.1/nscale-cli_Darwin_x86_64.tar.gz"
-      sha256 "cb78225f5282f3cbc66039d6884b9b79bd52da17deac84b66fd0bbdbd8d60832"
+      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.0.0-alpha.2/nscale-cli_Darwin_x86_64.tar.gz"
+      sha256 "034120c5dae5e247eaa7008ba6f0cb55e15df2f268664c95f0df1ee057093668"
 
       def install
         bin.install "nscale"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.0.0-alpha.1/nscale-cli_Darwin_arm64.tar.gz"
-      sha256 "cf4f31dbe1805292b14ce4dc3e9c40ec6104efcfa6c0866e29f630e788c59b52"
+      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.0.0-alpha.2/nscale-cli_Darwin_arm64.tar.gz"
+      sha256 "613f915560ec211517acf0ad8d2450c8c738509c5b33c7b15994c7111224a915"
 
       def install
         bin.install "nscale"
@@ -29,15 +29,15 @@ class NscaleAlpha < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.0.0-alpha.1/nscale-cli_Linux_x86_64.tar.gz"
-      sha256 "7c7dcb6e5871def5836c8bbcb58a978e11377f71c4eca966694820e6b70bb881"
+      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.0.0-alpha.2/nscale-cli_Linux_x86_64.tar.gz"
+      sha256 "0bf66d29da683fc16f1dc5973857189ea455627df08f4c41633f09b71368f3fb"
       def install
         bin.install "nscale"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.0.0-alpha.1/nscale-cli_Linux_arm64.tar.gz"
-      sha256 "90a0ce001e47f142b4eacd2902a4dfc7f686bd40296d844b1fc613f9171ae4d1"
+      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.0.0-alpha.2/nscale-cli_Linux_arm64.tar.gz"
+      sha256 "d423e46670fd56c7d793e3659135b9660fb1db23681f2dc5905ad4c1498aefce"
       def install
         bin.install "nscale"
       end

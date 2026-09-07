@@ -5,21 +5,21 @@
 class Nscale < Formula
   desc "The Nscale CLI tool"
   homepage "https://console.nscale.com"
-  version "3.6.0"
+  version "4.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.6.0/nscale-cli_Darwin_x86_64.tar.gz"
-      sha256 "dbb0a8f047058f139f156a5b01b9d6c6954740725c3e268e8d5a93c345efbe49"
+      url "https://github.com/nscaledev/homebrew-tap/releases/download/v4.0.0/nscale-cli_Darwin_x86_64.tar.gz"
+      sha256 "0de9acb1b70334493ec34da0376d3b3239ff8ec77d66c8ba7e48b0551dcce40d"
 
       define_method(:install) do
         bin.install "nscale"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.6.0/nscale-cli_Darwin_arm64.tar.gz"
-      sha256 "41acc76fd0799333774b4de53a8b96645f69a597b21388e843641b8514308f98"
+      url "https://github.com/nscaledev/homebrew-tap/releases/download/v4.0.0/nscale-cli_Darwin_arm64.tar.gz"
+      sha256 "3ae57e40e0c6170775184ed159d79415ec1edb202e018afad5d48106a312d538"
 
       define_method(:install) do
         bin.install "nscale"
@@ -29,15 +29,15 @@ class Nscale < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.6.0/nscale-cli_Linux_x86_64.tar.gz"
-      sha256 "7a99fd62ddef77a59b0d97f7141865b4cf7cdd9e78d6d3eb1a85d3a0eae6dd92"
+      url "https://github.com/nscaledev/homebrew-tap/releases/download/v4.0.0/nscale-cli_Linux_x86_64.tar.gz"
+      sha256 "c805b438e908f0e725754dba722c50e6d717cff065448f1d5988c1459eacc54a"
       define_method(:install) do
         bin.install "nscale"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nscaledev/homebrew-tap/releases/download/v3.6.0/nscale-cli_Linux_arm64.tar.gz"
-      sha256 "521ffd224af57512d6268d929b30fdf38dbf5131d2a66d173b69745a6ea34613"
+      url "https://github.com/nscaledev/homebrew-tap/releases/download/v4.0.0/nscale-cli_Linux_arm64.tar.gz"
+      sha256 "f0e15cf49c035c59d84eba539d9a170b46ef87c993b89a7f3004f086908ea168"
       define_method(:install) do
         bin.install "nscale"
       end
